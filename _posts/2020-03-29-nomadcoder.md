@@ -3,7 +3,7 @@ layout: post
 title:  nomadcoder 강의
 date:   2020-03-29 21:05:00 +0000
 description: nomadcoder 강의들으면서 개인 공부
-img: nomadcoder.jpg
+img: nomadcoder.png
 tags: [More]
 author: begginer_
 ---
