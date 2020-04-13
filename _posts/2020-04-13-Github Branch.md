@@ -6,7 +6,7 @@
 
 : 소프트웨어를 개발할 때에 개발자들은 동일한 소스코드를 함께 공유하고 다루게 된다. 여러 사람이 동일한 소스코드를 기반으로 서로 다른 작업을 할 때에는 각각 서로 다른 버전의 코드가 만들어 질 수 밖에 없다.
 
-이럴 때, **여러 개발자들이 동시에 다양한 작업을 할 수 있게 만들어 주는 기능이 바로 '브랜치(Branch)'**이다. 각자 독립적인 작업 영역(저장소)안에서 마음대로 소스코드를 변경할 수 있다. 이렇게 분리된 작업 영역에서 변경된 내용은 나중에 원래의 버전과 비교해서 하나의 새로운 버전으로 만들어낼 수 있다. 
+이럴 때, <span style="background-color:yellow; font-weight:bold">여러 개발자들이 동시에 다양한 작업을 할 수 있게 만들어 주는 기능이 바로 '브랜치(Branch)'</span>이다. 각자 독립적인 작업 영역(저장소)안에서 마음대로 소스코드를 변경할 수 있다. 이렇게 분리된 작업 영역에서 변경된 내용은 나중에 원래의 버전과 비교해서 하나의 새로운 버전으로 만들어낼 수 있다. 
 
 - 브랜치(branch)란?
 
@@ -14,9 +14,9 @@
 
     또한 이렇게 만들어진 브랜치는 다른 브랜치와 병합하여 작업한 내용을 다시 새로운 하나의 브랜치로 모을 수 있다. 
 
-    ![Branch%20_%20feat%20Git/Untitled.png](Branch%20_%20feat%20Git/Untitled.png)
+<center><img src="/assets/img/Branch/01.png"></center>
 
-    브랜치를 사용하여 동시에 여럭 작업을 진행하면 작업 흐름을 한눈에 파악하기 쉽다.
+<center>브랜치를 사용하여 동시에 여럭 작업을 진행하면 작업 흐름을 한눈에 파악하기 쉽다.</center>
 
     여러 명이서 동시에 작업을 할 때에 다른 사람의 작업에 영향을 주거나 받지 않도록, 먼저 메인 브랜치에서 자신의 작업 전용 브랜치를 만든다. 그리고 각자 작업을 진행한 후, 작업이 끝난 사람은 메인 브랜치에 자신의 브랜치의 변경 사항을 작성한다. 이렇게해서 다른 사람의 작업에 영향을 받지 않고 독립적으로 특정 작업을 수행하고 그 결과를 하나로 모아 나가게 된다. 이러한 방식으로 작업할 경우 '작업 단위' 즉, 브랜치로 그 작업의 기록을 중간중간에 남기게 되므로 문제가 발생했을 경우 원인이 되는 작업을 찾아내거나 그에 따른 대책을 세우기 쉬워진다. 
 
@@ -32,7 +32,7 @@
 
 - 통합 브랜치(Integration Branch)
 
-    : **통합 브랜치란 언제든지 배포할 수 있는 버전을 만들 수 있어야 하는 브랜치**이다. 그렇기 때문에 늘 안정적인 상태를 유지하는 것이 중요하다. 여기서 안정적인 상태란 현재 작업 중인 소스코드가 모바일에서 동작하는 어플리케이션을 개발하기 위한 것이라면, '그 어플리케이션의 모든 기능이 정상적으로 동작하는 상태'를 의미한다.
+    : <span style="background-color:yellow; font-weight:bold">통합 브랜치란 언제든지 배포할 수 있는 버전을 만들 수 있어야 하는 브랜치</span>이다. 그렇기 때문에 늘 안정적인 상태를 유지하는 것이 중요하다. 여기서 안정적인 상태란 현재 작업 중인 소스코드가 모바일에서 동작하는 어플리케이션을 개발하기 위한 것이라면, '그 어플리케이션의 모든 기능이 정상적으로 동작하는 상태'를 의미한다.
 
     만약 어플리케이션에서 문제가 발생하여 버그를 수정하던지 새로운 기능을 추가해야할 때, 바로 '토픽 브랜치(Topic branch)'를 만들 수 있어야한다. 처음에는 보통 통합 브랜치에서 토픽 브랜치를 만든다. 
 
@@ -40,7 +40,7 @@
 
 - 토픽 브랜치(Topic Branch)
 
-    : **토픽 브랜치란, 기능 추가나 버그 수정과 같은 단위 작업을 위한 브랜치**이다. 여럭 개의 작업을 동시에 진행할 때에는, 그 수만큼 토픽 브랜치를 생성할 수 있다. 
+    : <span style="background-color:yellow; font-weight:bold">토픽 브랜치란, 기능 추가나 버그 수정과 같은 단위 작업을 위한 브랜치</span>이다. 여럭 개의 작업을 동시에 진행할 때에는, 그 수만큼 토픽 브랜치를 생성할 수 있다. 
 
     토픽 브랜치는 보통 통합 브랜치로부터 만들어내며, 토픽 브랜치에서 특정 작업이 완료되면 다시 통합 브랜치에 병합하는 방식으로 진행된다. 이러한 토픽 브랜치는 '피처 브랜치(Feature branch)'라고 부르기도 한다.
 
@@ -52,7 +52,7 @@
 
     : 'HEAD'란 현재 사용 중인 브랜치의 선두 부분을 나타내는 이름이다. 기본적으로는 'mater'에 선두 부분을 나타낸다. 'HEAD'를 이동하면, 사용하는 브랜치가 변경된다.
 
-    ![Branch%20_%20feat%20Git/Untitled%201.png](Branch%20_%20feat%20Git/Untitled%201.png)
+<center><img src="/assets/img/Branch/02.png"></center>
 
 - stash
 
@@ -70,49 +70,49 @@
 
     : 여러 개의 브랜치를 하나로 모을 수 있다.
 
-    ![Branch%20_%20feat%20Git/Untitled%202.png](Branch%20_%20feat%20Git/Untitled%202.png)
+<center><img src="/assets/img/Branch/03.png"></center>
 
-    'master' 브랜치에서 분기하는 'bugfix' 브랜치가 있다고 가정
+<center>'master' 브랜치에서 분기하는 'bugfix' 브랜치가 있다고 가정</center
 
     'master' 브랜치의 상태가 이전부터 변경되어 있지만 않으면 매우 쉽게 병합할 수 있다. 'bugfix' 브랜치의 이력은 'master' 브랜치의 이력을 모두 포함하고 있기 때문에 'master' 브랜치는 단순히 이동하기만 해도 'bugfix' 브랜치의 내용을 적용할 수 있다. 이와 같은 병합을 'fast-forward(빨리 감기)병합'이라고 부른다.
 
-    ![Branch%20_%20feat%20Git/Untitled%203.png](Branch%20_%20feat%20Git/Untitled%203.png)
+<center><img src="/assets/img/Branch/04.png"></center>
 
-    'fast-forward 병합'
+<center>'fast-forward 병합'</center>
 
     하지만 'bugfix' 브랜치를 분기한 이후에 'master' 브랜치에 여러 가지 변경 사항이 적용되는 경우도 있다.
 
-    ![Branch%20_%20feat%20Git/Untitled%204.png](Branch%20_%20feat%20Git/Untitled%204.png)
+<center><img src="/assets/img/Branch/05.png"></center>
 
-    'bugfix' 브랜치로 분기된 후 'master' 브랜치에 여러 가지 변경 사항 적용
+<center>'bugfix' 브랜치로 분기된 후 'master' 브랜치에 여러 가지 변경 사항 적용</center>
 
     양쪽의 변경을 가져온 'merge commit(병합 커밋)'을 실행하게 된다. 병합 완료 후, 통합 브랜치인 'master' 브랜치로 통합된 이력이 생기게 된다.
 
-    ![Branch%20_%20feat%20Git/Untitled%205.png](Branch%20_%20feat%20Git/Untitled%205.png)
+<center><img src="/assets/img/Branch/06.png"></center>
 
-    'master' 브랜치로 통합된 이력이 생김
+<center>'master' 브랜치로 통합된 이력이 생김</center>
 
     병합 실행 시 'fast-forward 병합'이 가능한 경우라도 'non-fast-forward 병합'을 실행할 수 있다. 'non-fast-forward 병합'을 사용하면 브랜치가 그대로 남기 때문에 그 브랜치로 실행한 작업 확인 및 브랜치 관리 면에서 더 유용할 수 있다.
 
 - rebase
 
-    ![Branch%20_%20feat%20Git/Untitled%206.png](Branch%20_%20feat%20Git/Untitled%206.png)
+<center><img src="/assets/img/Branch/07.png"></center>
 
-    'master' 브랜치에서 분기하는 'bugfix' 브랜치가 있다고 가정
+<center>'master' 브랜치에서 분기하는 'bugfix' 브랜치가 있다고 가정</center>
 
     'bugfix' 브랜치를 'master' 브랜치에 rebase하면 'bugfix'의 브랜치의 이력이 'master' 브랜치 뒤로 이동하게 된다. 그렇기 때문에 이력이 하나의 줄기로 이어지게 된다.
 
     이 때 이동하는 x와 y 내에 포함된 내용이 'master' 의 커밋된 버전들과 충돌하는 부분이 생길 수 있다. 그때는 각각의 커밋에서 발생한 충돌 내용을 수정할 필요가 있다.
 
-    ![Branch%20_%20feat%20Git/Untitled%207.png](Branch%20_%20feat%20Git/Untitled%207.png)
+<center><img src="/assets/img/Branch/08.png"></center>
 
-    'bugfix'브랜치를 'master'브랜치에 rebase한 결과
+<center>'bugfix'브랜치를 'master'브랜치에 rebase한 결과</center>
 
     'rebase'만 하면 'master'의 위치는 그대로 유지된다. 'master'브랜치의 위치를 변경하기 위해서는 'master'브랜치에서 'bugfix'브랜치를 fast-forward'병합하면 된다.
 
-    ![Branch%20_%20feat%20Git/Untitled%208.png](Branch%20_%20feat%20Git/Untitled%208.png)
+<center><img src="/assets/img/Branch/09.png"></center>
 
-    'master'브랜치에서 'bugfix'브랜치를 fast-forward병합
+<center>'master'브랜치에서 'bugfix'브랜치를 fast-forward병합</center>
 
 merge와 rebase는 통합 브랜치에서 토픽 브랜치를 통합하고자 하는 목적은 같으나 특징이 다르다.
 
@@ -133,24 +133,24 @@ merge와 rebase는 통합 브랜치에서 토픽 브랜치를 통합하고자 �
 
 토픽 브랜치에서 새로운 기능을 추가하는 작업과 버그 수정을 동시에 진행하는 경우를 생각해보자
 
-![Branch%20_%20feat%20Git/Untitled%209.png](Branch%20_%20feat%20Git/Untitled%209.png)
+<center><img src="/assets/img/Branch/10.png"></center>
 
 일단 통합 브랜치부터 새롭게 버그 수정용 토픽 브랜치를 만들어, 새로운 기능을 추가하는 작업과는 별개로 버그 수정 작업을진행할 수 있다.
 
-![Branch%20_%20feat%20Git/Untitled%2010.png](Branch%20_%20feat%20Git/Untitled%2010.png)
+<center><img src="/assets/img/Branch/11.png"></center>
 
 버그 수정을 완료하면, 통합 브랜치와 버그 수정용 토픽 브랜치를 병합하여 수정된 버전을 만든다.
 
-![Branch%20_%20feat%20Git/Untitled%2011.png](Branch%20_%20feat%20Git/Untitled%2011.png)
+<center><img src="/assets/img/Branch/12.png"></center>
 
 버그도 수정했으니 다시 원래 브랜치로 돌아와서 새로운 기능 추가 작업을 계속 진행
 
-![Branch%20_%20feat%20Git/Untitled%2012.png](Branch%20_%20feat%20Git/Untitled%2012.png)
+<center><img src="/assets/img/Branch/13.png"></center>
 
 그러나, 작업을 진행하려고 봤더니 앞서 적용한 커밋 x의 버그가 수정된 버전의 소스코드를 지금의 커밋 o에도 적용해야만 한다는 사실을 알게 되었다. 여기서 커밋 x의 내용을 적용하려면, 직접 merge하는 방법과 커밋 x를 적용한 통합 브랜치에 rebase를 하는 방법이 있다.
 
 여기서는 통합 브랜치에 rebase하는 방법을 이용해보겠다.
 
-![Branch%20_%20feat%20Git/Untitled%2013.png](Branch%20_%20feat%20Git/Untitled%2013.png)
+<center><img src="/assets/img/Branch/14.png"></center>
 
 이런 상황에서는, rebase를 이용하여 커밋 x의 내용을 적용한 상태로 새로운 기능을 추가하기 위해 아래 그림과 같이 o' 버전으로 만들어내는 방법을 이용하면 된다.
