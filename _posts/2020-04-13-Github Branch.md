@@ -1,3 +1,14 @@
+---
+layout: post
+title:  브랜치(Branch)
+date:   2020-04-13 21:05:00 +0000
+description: 브랜치(Branch)_(feat.누구나 쉽게 이해할 수 있는 Git 발전)
+img: Git.png
+tags: [More]
+author: begginer_
+---
+
+
 # 브랜치(Branch)_(feat.누구나 쉽게 이해할 수 있는 Git 발전)
 
 ---
