@@ -165,3 +165,5 @@ merge와 rebase는 통합 브랜치에서 토픽 브랜치를 통합하고자 �
 <center><img src="/assets/img/Branch/14.png"></center>
 
 이런 상황에서는, rebase를 이용하여 커밋 x의 내용을 적용한 상태로 새로운 기능을 추가하기 위해 아래 그림과 같이 o' 버전으로 만들어내는 방법을 이용하면 된다.
+
+<span style="color:red;">[출처링크](https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html)</span>
