@@ -147,5 +147,3 @@ author: begginer_
     	}
     </script>
     ```
-
-    Controller에서 /social/login/kakao의 리소스를 처리하는 부분을 보면 파라미터로 전달된 code 정보로 카카오의 acc
