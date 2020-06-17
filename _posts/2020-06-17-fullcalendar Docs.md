@@ -3,7 +3,7 @@ layout: post
 title:  fullcalendar Doc / Toolbar 번역
 date:   2020-06-17 17:48:00 +0000
 description: fullcalendar Doc / Toolbar 번역
-img: toolbar.png
+img: toolbar.PNG
 tags: [More]
 author: begginer_
 ---
@@ -16,7 +16,7 @@ author: begginer_
 
 # header
 
----
+
 
 - 캘린더의 윗부분의 버튼과 제목 정의
 
@@ -48,7 +48,7 @@ Object/false, default:
 
 속성이 빈값으로 명시되어 있다면 글/버튼이 보이지 않을 것이다.
 <br><br><br>
----
+
 # footer
 
 ---
@@ -81,7 +81,7 @@ Date Formatter, default :
 
 날짜 범위 텍스트를 표시하는 화면의 경우, 두 날짜 사이의 텍스트를 제어하려면 titleRangeSeparator을 사용자 정의해라.
 <br><br><br>
----
+
 # titleRangeSeparator
 
 ---
@@ -96,7 +96,7 @@ titleFormat과 함께 작업
 
 모든 다른 날짜 범위 구분 문자 텍스트의 경우, defaultRangeSeparator를 사용해라
 <br><br><br>
----
+
 # buttonText
 
 ---
