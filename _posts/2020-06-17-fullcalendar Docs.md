@@ -1,8 +1,8 @@
 ﻿---
 layout: post
-title:  fullcalendar Doc / Toolbar 번역
+title:  fullcalendar Docs / Toolbar 번역
 date:   2020-06-17 17:48:00 +0000
-description: fullcalendar Doc / Toolbar 번역
+description: fullcalendar Docs / Toolbar 번역
 img: toolbar.PNG
 tags: [More]
 author: begginer_
@@ -63,7 +63,7 @@ Object / false (the default)
 
 이것은 기본적으로 거짓이며, 이것은 달력 밑에 컨트롤이 되지않는다는 것을 의미한다.
 <br><br><br>
----
+
 # titleFormat
 
 ---
