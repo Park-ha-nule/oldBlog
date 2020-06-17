@@ -1,8 +1,8 @@
 ﻿---
 layout: post
-title:  fullcalendar Docs / Toolbar 번역
+title:  fullcalendar Docs - Toolbar 번역
 date:   2020-06-17 17:48:00 +0000
-description: fullcalendar Docs / Toolbar 번역
+description: fullcalendar Docs - Toolbar 번역
 img: toolbar.PNG
 tags: [More]
 author: begginer_
